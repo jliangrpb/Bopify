@@ -27,9 +27,9 @@ class ApplicationController < ActionController::API
         end
     end
 
-    def test
-        render json: { message: ["Hello from Rails"] }
-    end    
+    # def test
+    #     render json: { message: ["Hello from Rails"] }
+    # end    
     
     private
 
