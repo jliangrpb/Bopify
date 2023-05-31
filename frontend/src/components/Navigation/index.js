@@ -26,12 +26,19 @@ function Navigation() {
   }
 
   return (
-    <ul>
-      <li>
-        <NavLink exact to="/">Home</NavLink>
-        {sessionLinks}
-      </li>
-    </ul>
+        <div className='navigation-bar-container'>
+            <ul className='navigation-bar'>
+                <div className="nav-bar-right">
+                    <div className='icons'>
+                    </div>
+                    <li>
+                        <NavLink to='/'></NavLink>
+                        {sessionLinks}
+                    </li>
+                </div>
+            </ul>
+
+        </div>
   );
 }
 

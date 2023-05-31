@@ -1,0 +1,20 @@
+.splash-page-flex-container {
+    /* display: flex; */
+    width: 100%;
+}
+
+.splash-page-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    width: 100%;
+    padding-left: 3vw;
+    box-sizing: border-box;
+}
+
+.header1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 20px 10px;
+}
