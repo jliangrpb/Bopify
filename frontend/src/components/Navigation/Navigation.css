@@ -66,3 +66,21 @@
     transform: scale(1.05);
     background-color: rgb(228, 228, 228);
 }
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 15px;
+}
+
+.github-link {
+    margin-right: 20px;
+    margin-left: 20px;
+    color: white;
+}
+
+.github-link:hover {
+    transform: scale(1.2);
+}

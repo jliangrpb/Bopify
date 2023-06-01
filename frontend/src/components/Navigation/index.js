@@ -30,6 +30,8 @@ function Navigation() {
             <ul className='navigation-bar'>
                 <div className="nav-bar-right">
                     <div className='icons'>
+                      <a href="https://github.com/jliangrpb" className='github-link'>
+                        <i className="fa-brands fa-github fa-lg"></i> Github</a>
                     </div>
                     <li>
                         <NavLink to='/'></NavLink>
