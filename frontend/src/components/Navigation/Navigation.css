@@ -1,5 +1,4 @@
 .navigation-bar-container {
-    /* grid-area: navBar; */
     position: sticky;
     top: 0;
     z-index: 1;
@@ -11,7 +10,7 @@
     justify-content: flex-end;
     align-items: center;
     position: sticky;
-    background-color: #141414;
+    background-color: #1c1c1c;
     height: 64px;
     top: 0;
     width: 100%

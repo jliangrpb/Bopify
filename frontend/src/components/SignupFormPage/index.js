@@ -56,7 +56,7 @@ return (
             <header>
                 <div className="header_container">
                     <div className="logo">
-                        <i className="fa-brands fa-spotify fa-2x"></i>
+                        <i className="fa-brands fa-spotify"></i>
                         <h2>Jamify</h2>
                     </div>
                     <h2 className="signup_title">Sign up to start listening!</h2>

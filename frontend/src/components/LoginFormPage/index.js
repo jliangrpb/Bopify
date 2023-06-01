@@ -35,7 +35,7 @@ function LoginFormPage() {
           data.errors.map(error => {
             if (error.includes('Matching')) {
               return currentErrors['LoginError'] = error
-            }
+            } 
         })
         setErrors(currentErrors);
       }
@@ -45,7 +45,7 @@ function LoginFormPage() {
   return (
     <>
       <div className='logo_header'>
-              <i className="fa-brands fa-spotify fa-3x"></i>
+              <i className="fa-brands fa-spotify"></i>
               <h2>Jamify</h2>
           </div>
           <div className='login'>
@@ -57,6 +57,7 @@ function LoginFormPage() {
                           <input
                               type='text'
                               value={credential}
+                              placeholder='Enter your email or username'
                               onChange={(e) => setCredential(e.target.value)}
                               required
                           />
@@ -66,6 +67,7 @@ function LoginFormPage() {
                           <input
                               type="password"
                               value={password}
+                              placeholder='Enter your password'
                               onChange={(e) => setPassword(e.target.value)}
                               required
                           />
@@ -77,11 +79,8 @@ function LoginFormPage() {
                   
               </form>
               <div className='signup_link'>
-                  <p>Don't have an account?</p>
-                  <NavLink to='/signup'>
-                      <button className='signup_button'>Sign up for Jamify</button>
-                  </NavLink>
-              </div>
+                <span>Don't have an account? <NavLink to="/signup">Sign up for Jamify</NavLink></span>
+            </div>
           </div>
       </>
     );
