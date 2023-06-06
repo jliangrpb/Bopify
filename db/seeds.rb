@@ -6,16 +6,40 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-User.create!(
-    username: 'demoman', 
-    email: 'demo@demo.com', 
-    password: 'password'
-  )
+ApplicationRecord.transaction do 
+  puts 'Destroying Tables...'
+    User.destroy_all
+    Song.destroy_all
+    Album.destroy_all
+    Artist.destroy_all
 
-10.times do 
-    User.create!({
-      username: Faker::Internet.unique.username(specifier: 3),
-      email: Faker::Internet.unique.email,
+  puts "Resetting primary keys..."
+    ApplicationRecord.connection.reset_pk_sequence!('users')
+    ApplicationRecord.connection.reset_pk_sequence!('artists')
+    ApplicationRecord.connection.reset_pk_sequence!('albums')
+    ApplicationRecord.connection.reset_pk_sequence!('songs')
+
+  puts 'Creating Users...'
+  User.create!(
+      username: 'demoman', 
+      email: 'demo@demo.com', 
       password: 'password'
-    }) 
-  end
+    )
+  
+  10.times do 
+      User.create!({
+        username: Faker::Internet.unique.username(specifier: 3),
+        email: Faker::Internet.unique.email,
+        password: 'password'
+      }) 
+    end
+
+  puts 'Creating Artists...'
+  artist1 = Artist.create!(name: 'Zedd')
+
+  puts 'Creating Albums...'
+  album1 = Album.create!(name: 'Clarity', artist: artist1)
+
+  puts 'Creating Songs...'
+  song1 = Song.create!(name: 'Clarity', album: album1, runtime: '4:31')
+end

@@ -17,4 +17,8 @@ class Artist < ApplicationRecord
         foreign_key: :artist_id,
         class_name: :Album,
         dependent: :destroy 
+
+    has_many :songs,
+        through: :albums,
+        source: :songs
 end
