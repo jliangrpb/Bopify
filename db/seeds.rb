@@ -26,13 +26,6 @@ ApplicationRecord.transaction do
       password: 'password'
     )
   
-  10.times do 
-      User.create!({
-        username: Faker::Internet.unique.username(specifier: 3),
-        email: Faker::Internet.unique.email,
-        password: 'password'
-      }) 
-    end
 
   puts 'Creating Artists...'
   artist1 = Artist.create!(name: 'Zedd')
