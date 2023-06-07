@@ -1,6 +1,7 @@
 import './SplashPage.css'
 import Navigation from "../Navigation";
 import SideBar from '../Sidebar';
+import AlbumIndex from '../AlbumIndex/AlbumIndex';
 
 function SplashPage() {
 
@@ -11,7 +12,8 @@ function SplashPage() {
             <div className="nav-main-container">
                 <Navigation/>
                 <div className="splash-page-container">
-                    <h1 className="header1">Pick a Song</h1>
+                    <h1 className="header1">Pick An Album</h1>
+                    <AlbumIndex/>
                 </div>
             </div>
         </div>

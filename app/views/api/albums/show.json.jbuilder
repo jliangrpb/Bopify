@@ -3,7 +3,7 @@ json.album do
         @songs.each do |song|
             json.set! song.id do
                 json.extract! song, :name
-                json.extract! song.artist, :name
+                json.extract! song.album.artist, :name
             end
         end
     end

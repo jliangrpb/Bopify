@@ -29,10 +29,14 @@ ApplicationRecord.transaction do
 
   puts 'Creating Artists...'
   artist1 = Artist.create!(name: 'Zedd')
+  artist2 = Artist.create!(name: 'Excision')
 
   puts 'Creating Albums...'
   album1 = Album.create!(name: 'Clarity', artist: artist1)
-
-  puts 'Creating Songs...'
   song1 = Song.create!(name: 'Clarity', album: album1, runtime: '4:31')
+  
+  album2 = Album.create!(name: 'Onyx', artist: artist2)
+  song2 = Song.create!(name: 'Decimate', album: album2)
+  song3 = Song.create!(name: 'Salvation', album: album2)
+
 end

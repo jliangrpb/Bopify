@@ -33,9 +33,9 @@ function LoginFormPage() {
         }
         if (data?.errors) {
           data.errors.map(error => {
-            if (error.includes('Matching')) {
+            // if (error.includes('Matching')) {
               return currentErrors['LoginError'] = error
-            } 
+            // } 
         })
         setErrors(currentErrors);
       }

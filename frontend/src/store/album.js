@@ -15,19 +15,15 @@ const getAlbums = (albums) => ({
 
 export const fetchAlbum = (albumId) => async (dispatch) => {
     const res = await csrfFetch(`/api/albums/${albumId}`);
-    if (res.ok) {
-        const album = await res.json();
-        return dispatch(getAlbum(album));
-    }
+    const album = await res.json();
+    return dispatch(getAlbum(album));
 }
 
-export const fetchAllAlbums = () => async (dispatch) => {
-
+export const fetchAllAlbums = () => async (dispatch) => { 
     const res = await csrfFetch('/api/albums');
-    if (res.ok) {
-        const albums = await res.json();
-        return dispatch(getAlbums(albums));
-    }
+    const albums = await res.json();
+    console.log(albums);
+    return dispatch(getAlbums(albums));
 }
 
 

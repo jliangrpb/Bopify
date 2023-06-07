@@ -10,8 +10,12 @@ async function csrfFetch(url, options = {}) {
 
   const res = await fetch(url, options);
 
-  if (res.status >= 400) throw res;
-  return res;
+    if (res.ok) {
+    return res;
+  } else {
+    throw new Error(`Request failed with status ${res.status}`);
+  }
+
 }
 
 export default csrfFetch;
