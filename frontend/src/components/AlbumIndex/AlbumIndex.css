@@ -19,7 +19,6 @@
     flex-direction: column;
     height: 100%;
     background-color: #1c1c1c;
-
 }
 
 .album-item-index-flexbox {
@@ -54,7 +53,7 @@
     background: rgb(57, 56, 56);
 }
 
-.album-name {
+.album-index-name {
     font-size: 1rem;
     font-weight: 700;
     width: none;

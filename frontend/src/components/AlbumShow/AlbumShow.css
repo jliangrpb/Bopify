@@ -1,0 +1,69 @@
+.album-show-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c1c;
+    width: 100%;
+    height: 100vh;
+    padding-left: 3vw;
+    box-sizing: border-box;
+}
+
+.album-details {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.album-details {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.album-text {
+    padding: 1px;
+    margin-bottom: 30px;
+    margin-left: 250px;
+
+    font-weight: bold;
+    width: 100%;
+}
+
+.album-show-name {
+    font-size: 45px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    letter-spacing: -0.03em;
+
+}
+
+.artist-and-song-count {
+    display: flex;
+    flex-direction: row;
+}
+
+.bullet-point {
+    margin: 0px 5px;
+}
+
+.hashtag-and-title {
+    display: flex;
+    flex-direction: row;
+    color: #a7a7a7;
+    font-size: 13px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    margin-left: 250px;
+    border-bottom: .1px solid rgba(167, 167, 167, 0.3);
+    padding-bottom: 10px;
+}
+
+.hashtag {
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+.title-text {
+    margin-left: 20px;
+    letter-spacing: 0.5px;
+}

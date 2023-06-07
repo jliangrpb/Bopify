@@ -3,9 +3,9 @@ import csrfFetch from "./csrf";
 const GET_ALBUM = 'GET_ALBUM'
 const GET_ALBUMS = 'GET_ALBUMS'
 
-const getAlbum = (album) => ({
+const getAlbum = (payload) => ({
     type: GET_ALBUM,
-    album
+    payload
 })
 
 const getAlbums = (albums) => ({
@@ -32,10 +32,13 @@ const albumReducer = (state = {}, action) => {
 
     switch (action.type) {
         case GET_ALBUM:
-            nextState[action.album.id] = action.album;
+            nextState[action.payload.album.id] = action.payload.album;
             return nextState;
         case GET_ALBUMS:
-            return { ...nextState, ...action.albums };
+            for (let albumId in action.albums) {
+            nextState[albumId] = action.albums[albumId];
+            }
+            return nextState;
         default:
             return nextState;
     };

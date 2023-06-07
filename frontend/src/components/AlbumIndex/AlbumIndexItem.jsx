@@ -5,11 +5,10 @@ function AlbumIndexItem({album}) {
     const { id, name } = album;
 
     const artistName = album.artist;
-
     return (
         <NavLink to={`albums/${id}`} className='album-index-item-link'>
             <div className='album-index-item'>
-                <h3 className="album-name">{name}</h3>
+                <h3 className="album-index-name">{name}</h3>
                 <p className="album-index-artist-name">{artistName}</p>
             </div>
         </NavLink>

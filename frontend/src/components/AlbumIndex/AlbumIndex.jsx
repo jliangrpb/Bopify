@@ -15,7 +15,6 @@ function AlbumIndex() {
    if (!albums) {
         return null;
     }
-    
   return (
     <div className="album-index-flex-container">
       <div className="album-index-container">

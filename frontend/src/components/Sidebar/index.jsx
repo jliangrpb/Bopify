@@ -2,7 +2,6 @@ import './SideBar.css';
 import { NavLink } from "react-router-dom";
 
 const SideBar = () => {
-
     return (
         <nav className="sideBar-container">
             <div className="logoDiv">
