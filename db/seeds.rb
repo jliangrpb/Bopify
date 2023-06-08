@@ -20,6 +20,7 @@ require 'open-uri'
     ApplicationRecord.connection.reset_pk_sequence!('songs')
 
   puts 'Creating Users...'
+  
   User.create!(
       username: 'demoman', 
       email: 'demo@demo.com', 
