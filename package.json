@@ -5,7 +5,7 @@
   "directories": {
     "lib": "lib"
   },
-    "engines": {
+  "engines": {
     "node": "16.19.0"
   },
   "scripts": {
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/jliangrpb/Jamify/issues"
   },
-  "homepage": "https://github.com/jliangrpb/Jamify#readme"
+  "homepage": "https://github.com/jliangrpb/Jamify#readme",
+  "dependencies": {
+    "react-h5-audio-player": "^3.8.6"
+  }
 }

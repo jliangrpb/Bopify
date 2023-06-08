@@ -1,0 +1,81 @@
+.song-album-item {
+    border: none;
+    height: 64px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+    flex-direction: row;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+.song-album-item:hover {
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border-radius: 4px;
+}
+
+.song-album-item-id {
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #b3b3b3;
+}
+
+.song-album-item-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.song-album-item-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    color: #ffffff;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    justify-content: space-between;
+}
+
+.song-album-item-name {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ffffff;
+    margin-top: 2px;
+}
+
+.song-album-item-artist {
+    font-size: 14px;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #b3b3b3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.song-album-item-runtime {
+    width: auto;
+    font-size: 14px;
+    padding: 0;
+    color: #b3b3b3;
+    margin-left: auto;
+}

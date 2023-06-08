@@ -13,6 +13,7 @@
     border-radius: 40px;
     border: none;
 
+    background-color: rgb(13, 208, 58);
     margin-right: 30px;
 }
 
@@ -22,7 +23,6 @@
 }
 
 .fa-user {
-    background-color: rgb(13, 208, 58);
     padding: 7px;
     border-radius: 50%;
     line-height: 14px;

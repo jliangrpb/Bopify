@@ -14,19 +14,13 @@
     align-items: flex-end;
 }
 
-.album-details {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
 .album-text {
     padding: 1px;
     margin-bottom: 30px;
-    margin-left: 250px;
-
+    margin-left: 20px;
     font-weight: bold;
     width: 100%;
+    color: white;
 }
 
 .album-show-name {
@@ -66,4 +60,21 @@
 .title-text {
     margin-left: 20px;
     letter-spacing: 0.5px;
+}
+
+.album-photo2 {
+    position: relative;
+    height: 66%;
+    width: 100%;
+    margin-left: 280px;
+        display: flex;
+        height: 100%;
+        width: 20%;
+        min-width: 200px;
+}
+
+.album-photo2 img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .5);
 }

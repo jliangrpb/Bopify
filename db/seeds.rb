@@ -5,13 +5,13 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require 'open-uri'
 
-ApplicationRecord.transaction do 
   puts 'Destroying Tables...'
-    User.destroy_all
-    Song.destroy_all
-    Album.destroy_all
-    Artist.destroy_all
+  Song.destroy_all
+  Album.destroy_all
+  Artist.destroy_all
+  User.destroy_all
 
   puts "Resetting primary keys..."
     ApplicationRecord.connection.reset_pk_sequence!('users')
@@ -36,7 +36,20 @@ ApplicationRecord.transaction do
   song1 = Song.create!(name: 'Clarity', album: album1, runtime: '4:31')
   
   album2 = Album.create!(name: 'Onyx', artist: artist2)
-  song2 = Song.create!(name: 'Decimate', album: album2)
-  song3 = Song.create!(name: 'Salvation', album: album2)
+  song2 = Song.create!(name: 'Decimate', album: album2, runtime: '3:41')
+  song3 = Song.create!(name: 'Salvation', album: album2, runtime: '4:09')
 
-end
+  Album.where(id: 2)[0]
+  album2_photo = URI.open('https://jamify-seeds.s3.amazonaws.com/onyx.jpg')
+  album2.photo.attach(io: album2_photo, filename: "onyx.jpg")
+
+  Song.where(id: 2).each_with_index do |song, index|
+  song.photo.attach(
+    io: URI.open("https://jamify-seeds.s3.amazonaws.com/onyx.jpg"),
+    filename: "onyx.jpg"
+  )
+  song.mp3.attach(
+    io: URI.open("https://jamify-seeds.s3.amazonaws.com/Decimate.mp3"),
+    filename: "Decimate.mp3"
+  )
+  end

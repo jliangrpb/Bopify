@@ -1,6 +1,9 @@
 class Song < ApplicationRecord 
     validates :name, :album_id, presence: true
 
+    has_one_attached :photo
+    has_one_attached :mp3 
+
     belongs_to :album,
         primary_key: :id, 
         foreign_key: :album_id,
@@ -9,7 +12,8 @@ class Song < ApplicationRecord
 
     has_one :artist,
         through: :album,
-        source: :artist
+        source: :artist,
+        dependent: :destroy
 
     has_many :playlist_songs,
         primary_key: :id,

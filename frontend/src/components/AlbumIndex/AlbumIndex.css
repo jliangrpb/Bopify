@@ -62,3 +62,16 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.album-image {
+    position: relative;
+    height: 66%;
+    width: 100%;
+}
+
+
+.album-image img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .5);
+}

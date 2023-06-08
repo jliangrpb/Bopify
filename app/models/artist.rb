@@ -20,5 +20,6 @@ class Artist < ApplicationRecord
 
     has_many :songs,
         through: :albums,
-        source: :songs
+        source: :songs,
+        dependent: :destroy
 end

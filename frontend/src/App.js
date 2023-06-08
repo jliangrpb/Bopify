@@ -4,6 +4,7 @@ import SignupFormPage from "./components/SignupFormPage";
 import LoginFormPage from "./components/LoginFormPage";
 import SplashPage from "./components/SplashPage/SplashPage";
 import AlbumShow from "./components/AlbumShow/AlbumShow";
+import PlayBar from "./components/Playbar/Playbar";
 
 function App() {
   return (
@@ -18,9 +19,11 @@ function App() {
         </Route>
         <Route exact path='/'>
           <SplashPage/>
+          <PlayBar/>
         </Route>
         <Route path='/albums/:albumId'>
           <AlbumShow />
+          <PlayBar/>
         </Route>
       </Switch>
     </>
