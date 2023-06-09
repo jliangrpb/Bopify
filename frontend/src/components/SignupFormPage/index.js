@@ -24,12 +24,13 @@ function SignupFormPage() {
 const handleSubmit = (e) => {
   e.preventDefault();
   const currentErrors = {};
+  
 
+  if (password !== confirmPassword) currentErrors['ConfirmPasswordError'] = 'Your confirmed password must match your password';
   return dispatch(sessionActions.signup({email, username, password}))
-  .catch(async (res) => {
-      let data;
-      console.log(data)
-      try {
+    .catch(async (res) => {
+        let data;
+        try {
               data = await res.clone().json();
             } catch {
                 data = await res.text();
@@ -45,7 +46,6 @@ const handleSubmit = (e) => {
                         return currentErrors['UsernameError'] = error;
                     }
                 })
-                if (password !== confirmPassword) currentErrors['ConfirmPasswordError'] = 'Your confirmed password must match your password';
           }
 
           setErrors(currentErrors);

@@ -9,14 +9,9 @@ async function csrfFetch(url, options = {}) {
   }
 
     const res = await fetch(url, options);
+    if (res.status >= 400) throw res;
+    return res;
 
-  if (res.status >= 400) {
-    const errorData = await res.json();
-    const errorMessage = errorData.message || "Something went wrong";
-    throw new Error(errorMessage);
-  }
-
-  return res;
 
 }
 
