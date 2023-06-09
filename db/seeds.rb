@@ -129,7 +129,7 @@ require 'open-uri'
   )
   end
 
-  album5 = Album.create!(name: 'Top hits', artist: artist4)
+  album5 = Album.create!(name: 'Top Hits', artist: artist4)
   song10 = Song.create!(name: 'Starlight', album: album5, runtime: '3:25')
   song11 = Song.create!(name: 'No Sleep', album: album5, runtime: '3:27')
   song12 = Song.create!(name: 'Follow', album: album5, runtime: '3:41')
