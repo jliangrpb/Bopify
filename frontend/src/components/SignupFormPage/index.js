@@ -28,6 +28,7 @@ const handleSubmit = (e) => {
   return dispatch(sessionActions.signup({email, username, password}))
   .catch(async (res) => {
       let data;
+      console.log(data)
       try {
               data = await res.clone().json();
             } catch {
