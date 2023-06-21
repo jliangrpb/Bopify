@@ -1,7 +1,7 @@
-import './SplashPage.css'
+import SideBar from '../SideBar/SideBar';
 import Navigation from "../Navigation";
 import AlbumIndex from '../AlbumIndex/AlbumIndex';
-import SideBar from '../SideBar/SideBar';
+import './SplashPage.css'
 
 function SplashPage() {
 
