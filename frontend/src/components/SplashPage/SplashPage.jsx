@@ -1,4 +1,4 @@
-import SideBar from '../SideBar/SideBar';
+import SideBar from '../SideBar/SidesBar';
 import Navigation from "../Navigation";
 import AlbumIndex from '../AlbumIndex/AlbumIndex';
 import './SplashPage.css'
