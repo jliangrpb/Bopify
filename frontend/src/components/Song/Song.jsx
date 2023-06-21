@@ -1,7 +1,6 @@
 import './Song.css';
 import { useDispatch } from 'react-redux';
 import { setCurrentSong } from '../../store/audio'; // Import the action creator for setting the current song
-import PlayBar from '../Playbar/Playbar';
 
 function Song({ song, albumId }) {
   const artistName = song.artistName;
