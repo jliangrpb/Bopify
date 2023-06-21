@@ -117,7 +117,7 @@ return (
             </div>
         </div>
         
-    )
-}
+    );
+};
 
 export default SignupFormPage;

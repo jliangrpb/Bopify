@@ -43,6 +43,6 @@ function PlayBar() {
       </div>
     </div>
   );
-}
+};
 
 export default PlayBar;

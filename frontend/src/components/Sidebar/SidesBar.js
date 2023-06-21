@@ -18,6 +18,6 @@ const SideBar = () => {
             </div>
         </nav>
     )
-}
+};
 
 export default SideBar;

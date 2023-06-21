@@ -16,6 +16,6 @@ function AlbumIndexItem({album}) {
             </div>
         </NavLink>
     )
-}
+};
 
 export default AlbumIndexItem;

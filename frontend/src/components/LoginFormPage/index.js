@@ -81,6 +81,6 @@ function LoginFormPage() {
           </div>
       </>
     );
-}
+};
 
 export default LoginFormPage;

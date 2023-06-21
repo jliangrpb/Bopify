@@ -27,6 +27,6 @@ function AlbumIndex() {
       </div>
     </div>
   );
-}
+};
 
 export default AlbumIndex;

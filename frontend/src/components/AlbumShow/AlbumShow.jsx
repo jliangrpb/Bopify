@@ -66,6 +66,6 @@ function AlbumShow() {
   </div>
 );
 
-}
+};
 
 export default AlbumShow;

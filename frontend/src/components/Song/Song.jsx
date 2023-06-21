@@ -27,6 +27,6 @@ function Song({ song, albumId }) {
       </div>
     </div>
   );
-}
+};
 
 export default Song;
