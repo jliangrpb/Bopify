@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { fetchAlbum } from '../../store/album';
-import SideBar from '../SideBar/SidesBar';
+import SideBar from '../SideBar/SidesBar.js';
 import Navigation from '../Navigation';
 import Song from '../Song/Song';
 import './AlbumShow.css';
