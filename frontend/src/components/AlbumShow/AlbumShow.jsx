@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { fetchAlbum } from '../../store/album';
-import SideBar from '../SideBar/SidesBar.js';
 import Navigation from '../Navigation';
 import Song from '../Song/Song';
 import './AlbumShow.css';
@@ -28,7 +27,6 @@ function AlbumShow() {
 
   return (
   <div className='album-show-page'>
-    <SideBar />
     <div className='album-show-nav'>
       <Navigation />
       <div className='album-show-container'>

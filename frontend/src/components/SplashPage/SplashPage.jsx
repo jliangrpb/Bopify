@@ -1,4 +1,3 @@
-import SideBar from '../SideBar/SidesBar.js';
 import Navigation from "../Navigation";
 import AlbumIndex from '../AlbumIndex/AlbumIndex';
 import './SplashPage.css'
@@ -8,7 +7,6 @@ function SplashPage() {
 
     return (
         <div className="splash-page-flex-container">
-            <SideBar/>
             <div className="nav-main-container">
                 <Navigation/>
                 <div className="splash-page-container">

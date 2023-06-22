@@ -5,6 +5,7 @@ import LoginFormPage from "./components/LoginFormPage";
 import SplashPage from "./components/SplashPage/SplashPage";
 import AlbumShow from "./components/AlbumShow/AlbumShow";
 import PlayBar from "./components/Playbar/Playbar";
+import SideBar from '../SideBar/SidesBar.js';
 
 function App() {
   return (
@@ -18,10 +19,12 @@ function App() {
           <SignupFormPage />
         </Route>
         <Route exact path='/'>
+          <SideBar />
           <SplashPage/>
           <PlayBar/>
         </Route>
         <Route path='/albums/:albumId'>
+          <SideBar />
           <AlbumShow />
           <PlayBar/>
         </Route>
