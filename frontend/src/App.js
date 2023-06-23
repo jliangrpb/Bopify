@@ -5,7 +5,7 @@ import LoginFormPage from "./components/LoginFormPage";
 import SplashPage from "./components/SplashPage/SplashPage";
 import AlbumShow from "./components/AlbumShow/AlbumShow";
 import PlayBar from "./components/Playbar/Playbar";
-import SideBar from "./components/SideBar"
+import SideBar from "./components/SideNavBar"
 
 function App() {
   return (
