@@ -5,12 +5,11 @@ import LoginFormPage from "./components/LoginFormPage";
 import SplashPage from "./components/SplashPage/SplashPage";
 import AlbumShow from "./components/AlbumShow/AlbumShow";
 import PlayBar from "./components/Playbar/Playbar";
-import SideBar from "./components/SideBar/SidesBar.jsx"
+import SideBar from "./components/SideBar"
 
 function App() {
   return (
     <>
-    
       <Switch>
         <Route path="/login" >
           <LoginFormPage />
