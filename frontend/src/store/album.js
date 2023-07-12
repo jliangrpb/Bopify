@@ -22,7 +22,6 @@ export const fetchAlbum = (albumId) => async (dispatch) => {
 export const fetchAllAlbums = () => async (dispatch) => { 
     const res = await csrfFetch('/api/albums');
     const albums = await res.json();
-    console.log(albums);
     return dispatch(getAlbums(albums));
 }
 
